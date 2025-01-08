@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Add News Section */
+.add-news {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.add-news h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-news label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.add-news input[type="text"],
+.add-news textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.add-news button {
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+/* News List Section */
+.news-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-list h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.news-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.news-list th, .news-list td {
+    padding: 15px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-list th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.news-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+.news-list button {
+    background-color: #ff4d4d; /* Red for delete */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.news-list form {
+    display: inline;
+}
+
+.news-list form button[type="submit"]:first-child {
+    background-color: #1E3A8A; /* Blue for edit */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1E3A8A;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .add-news,
+    .news-list {
+        padding: 10px;
+    }
+
+    .news-list table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .news-list th, .news-list td {
+        padding: 10px;
+    }
+}
